@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Кобзев](https://up.htmlacademy.ru/htmlcss/27/user/96091).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Сорокин](https://htmlacademy.ru/profile/osorokin). 
 
 ---
 
