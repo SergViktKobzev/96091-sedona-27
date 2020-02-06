@@ -20,8 +20,39 @@
   </header>
 
   <main>
-    <h1>Каталог гостиниц</h1> <!-- Этот элемент потом спрячится стилями -->
-    <!-- По ДЗ здесь будет блок форм, который верстать пока ненадо -->
+    <h1 class="visually-hidden">Каталог гостиниц</h1>
+    <form action="" method="post">
+      <fieldset class="infrastructure">
+        <legend>Инфраструктура:</legend>
+        <label><input type="checkbox" name="pool" checked>Бассейн</label>
+        <label><input type="checkbox" name="parking">Парковка</label>
+        <label><input type="checkbox" name="wi-fi">wi-fi</label>
+      </fieldset>
+      <fieldset class="type-housing">
+        <legend>Тип жилья:</legend>
+        <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+        <label><input type="checkbox" name="motel" checked>Мотель</label>
+        <label><input type="checkbox" name="apartments" checked>Апартаменты</label>
+      </fieldset>
+      <div class="cost">
+        <label for="cost-fielf">Стоимость в сутки (р):</label>
+        <output name="min-cost">от 0</output>
+        <output name="max-cost">до 3000</output>
+        <input id="cost-fielf" type="range" name="cost" min="0">
+        <button type="submit">Показать</button>
+      </div>
+    </form>
+    <div class="sorting">
+      <b>Найдено: 3</b>
+      <fieldset class="sorting-field">
+        <legend>Сортировка:</legend>
+        <button type="button">По цене</button>
+        <button type="button">По типу</button>
+        <button type="button">По рейтингу</button>
+        <button class="arrow" type="button"></button>
+        <button class="arrow" type="button"></button>
+      </fieldset>
+    </div>
     <ul>
       <li>
         <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы">
