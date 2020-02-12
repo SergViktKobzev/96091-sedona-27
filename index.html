@@ -74,15 +74,31 @@
       </p>
       <form action="" method="post">
         <legend>Поиск гостиницы в седоне</legend>
-        <label for="arrival-date-field">Дата заезда:</label>
-        <input id="arrival-date-field" type="date" name="arrival-date" value="24 апреля 2017">
-        <label for="departure-date-field">Дата выезда:</label>
-        <input id="departure-date-field" type="date" name="departure-date" value="4 июля 2017">
+        <label>
+          Дата заезда:
+          <input class="date arrival" type="date" name="arrival-date" value="24 апреля 2017">
+        </label>
+        <label>
+          Дата выезда:
+          <input class="date departure" type="date" name="departure-date" value="4 июля 2017">
+        </label>
         <div class="amount-people">
-          <label for="adults-field">Взрослые:</label>
-          <input id="adults-field" type="number" name="adults" value="2" min="0">
-          <label for="children-field">Дети:</label>
-          <input id="children-field" type="number" name="children" value="0" min="0">
+          <div class="field-adults">
+            <button class="decrease adults" type="button">Минус</button>
+            <label class="adults-field">
+              Взрослые:
+              <input class="amount-adults" type="number" name="adults" value="2" min="0">
+            </label>
+            <button class="increase adults" type="button">Плюс</button>
+          </div>
+          <div class="field-children">
+            <button class="decrease children" type="button">Минус</button>
+            <label class="children-field">
+              Дети:
+              <input id="children-field" type="number" name="children" value="0" min="0">
+            </label>
+            <button class="increase children" type="button">Плюс</button>
+          </div>
         </div>
         <button type="button">Найти</button>
       </form>
