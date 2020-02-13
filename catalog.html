@@ -3,23 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - каталог гостиниц</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <a href="index.html">
       <img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип">
     </a>
     <nav>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a class="active-link" href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="catalog-page">
     <h1 class="visually-hidden">Каталог гостиниц</h1>
     <form action="" method="post">
       <fieldset class="infrastructure">
@@ -53,40 +56,40 @@
         <button class="arrow" type="button"></button>
       </fieldset>
     </div>
-    <ul>
-      <li>
+    <ul class="house-list">
+      <li class="house-item">
         <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы">
-        <h2>Amara resort & spa</h2>
-        <p>Гостиница от 4000р.</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
-        <p>Рейтинг: 8,5</p>
+        <h2 class="house-name">Amara resort & spa</h2>
+        <p class="house-type">Гостиница от 4000р.</p>
+        <a class="house-detailed" href="#">Подробнее</a>
+        <a class="house-reservation" href="#">Забронировать</a>
+        <p class="house-rating">Рейтинг: 8,5</p>
       </li>
-      <li>
+      <li class="house-item">
         <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фото мотеля">
-        <h2>Desert quail inn</h2>
-        <p>Мотель от 3000р.</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
-        <p>Рейтинг: 8,9</p>
+        <h2 class="house-name">Desert quail inn</h2>
+        <p class="house-type">Мотель от 3000р.</p>
+        <a class="house-detailed" href="#">Подробнее</a>
+        <a class="house-reservation" href="#">Забронировать</a>
+        <p class="house-rating">Рейтинг: 8,9</p>
       </li>
-      <li>
+      <li class="house-item">
         <img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов">
-        <h2>Villas at poco diablo</h2>
-        <p>Апартаменты от 2000р.</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
-        <p>Рейтинг: 9,2</p>
+        <h2 class="house-name">Villas at poco diablo</h2>
+        <p class="house-type">Апартаменты от 2000р.</p>
+        <a class="house-detailed" href="#">Подробнее</a>
+        <a class="house-reservation" href="#">Забронировать</a>
+        <p class="house-rating">Рейтинг: 9,2</p>
       </li>
     </ul>
   </main>
 
-  <footer>
-    <ul>
+  <footer class="main-footer">
+    <ul class="contacts">
       <li>#visitsedona</li>
       <li>Тел: +7(495)666-02-66</li>
     </ul>
-    <ul>
+    <ul class="socials">
       <li><a href="#">Вконтакте</a></li>
       <li><a href="#">Фейсбук</a></li>
       <li><a href="#">Инстаграм</a></li>

@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+/* Начало стилизации шапки сайта  */
+
+.main-header {
+    font-size: 21px;
+    font-weight: bold;
+
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #cacaca;
+}
+
+.active-link {
+    color: #766357;
+}
+
+/* Начало стилизации главной страницы  */
+
+main.index-page {
+    background-color: #ffffff;
+}
+
+.title-index {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.subtitle-advantages {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.subtitle-form-index {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-index p {
+    color: #333333;
+}
+
+.button-search {
+    font-size: 21px;
+    line-height: 26px;
+    font-size: bold;
+    color: #ffffff;
+
+    background-color: #766357;
+}
+
+.button-search:hover {
+    background-color: #604e43;
+}
+
+.button-search:active {
+    color: #928a85;
+
+    background-color: #503e33;
+}
+
+/* Начало стилизации страницы с катологом гостиниц  */
+
+main.catalog-page {
+    background-color: #ffffff;
+}
+
+.house-list {
+
+    background-color: #ffffff;
+
+    list-style: none;
+}
+
+.house-item {
+    border-top: 1px solid #e5e5e5;
+}
+
+.house-item:last-of-type {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.house-name {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.house-name:hover {
+    color: #81b3d2;
+}
+
+.house-name:active {
+    color: #cacaca;
+}
+
+.house-type {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.house-detailed,
+.house-reservation {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;  
+}
+
+.house-detailed {
+    background-color: #81b3d2;
+}
+
+.house-detailed:hover {
+    background-color: #669ec0;
+}
+
+.house-detailed:active {
+    color: #8b979f;
+
+    background-color: #425c6c;
+}
+
+.house-reservation {
+    background-color: #766357;
+}
+
+.house-reservation:hover {
+    background-color: #604e43;
+}
+
+.house-reservation:active {
+    color: #928a85;
+
+    background-color: #503e33;
+}
+
+.house-rating {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+
+    background-color: #f2f2f2;
+}
+
+/* Начало стилизации подвала сайта  */
+
+.main-footer {
+    background-color: #ffffff;
+    opacity: 0.902;
+}
+
+.contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+
+    list-style: none;
+}
+
+.socials {
+    list-style: none;
+}
+
+
