@@ -4,7 +4,7 @@ body {
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.5;
     color: #000000;
     text-transform: uppercase;
 
@@ -29,7 +29,7 @@ a {
 
 /* Начало стилизации шапки сайта  */
 
-.main-header {
+.page-header {
     font-size: 21px;
     font-weight: bold;
 
@@ -40,11 +40,11 @@ a {
     list-style: none;
 }
 
-.site-navigation a:hover {
+.site-navigation-link:hover {
     color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation-link:active {
     color: #cacaca;
 }
 
@@ -54,27 +54,27 @@ a {
 
 /* Начало стилизации главной страницы  */
 
-main.index-page {
+.page-main-index {
     background-color: #ffffff;
 }
 
 .title-index {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 1.5;
     font-weight: bold;
     color: #000000;
 }
 
 .subtitle-advantages {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.5;
     font-weight: normal;
     color: #333333;
 }
 
 .subtitle-form-index {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1.5;
     font-weight: bold;
     color: #000000;
 }
@@ -85,7 +85,7 @@ main.index-page {
 
 .button-search {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 1.5;
     font-size: bold;
     color: #ffffff;
 
@@ -104,7 +104,7 @@ main.index-page {
 
 /* Начало стилизации страницы с катологом гостиниц  */
 
-main.catalog-page {
+.page-main-catalog {
     background-color: #ffffff;
 }
 
@@ -125,7 +125,7 @@ main.catalog-page {
 
 .house-name {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 1.5;
     font-weight: bold;
     color: #000000;
 }
@@ -140,7 +140,7 @@ main.catalog-page {
 
 .house-type {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     font-weight: normal;
     color: #333333;
 }
@@ -148,7 +148,7 @@ main.catalog-page {
 .house-detailed,
 .house-reservation {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     font-weight: bold;
     color: #ffffff;  
 }
@@ -183,7 +183,7 @@ main.catalog-page {
 
 .house-rating {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     color: #666666;
 
     background-color: #f2f2f2;
@@ -191,14 +191,13 @@ main.catalog-page {
 
 /* Начало стилизации подвала сайта  */
 
-.main-footer {
-    background-color: #ffffff;
-    opacity: 0.902;
+.page-footer {
+    background-color: rgba(255, 255, 255, 0.902);
 }
 
 .contacts {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 1.5;
     font-weight: bold;
 
     list-style: none;
