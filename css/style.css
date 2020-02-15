@@ -72,6 +72,39 @@ a {
     color: #333333;
 }
 
+.list-advantages,
+.sublist-advantages {
+    list-style: none;
+}
+
+.item-advantages,
+.subitem-advantages {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.item-advantages {
+    background-color: #eeeeee;
+}
+
+.first-item-advantages,
+.second-item-advantages {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.subitem-advantages {
+    background-color: #ffffff;
+}
+
+.subtitle-item-advantages {
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
 .subtitle-form-index {
     font-size: 30px;
     line-height: 1.5;
@@ -106,6 +139,95 @@ a {
 
 .page-main-catalog {
     background-color: #ffffff;
+}
+
+.form-catalog {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+
+    background-color: #3f769f;
+}
+
+.fieldset-catalog {
+    border: 0 none;
+}
+
+.legend-catalog {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.sorting {
+    background-color: #fefefe;
+}
+
+.found {
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #000000;
+}
+
+.fieldset-sorting {
+    border: 0 none;
+}
+
+.legend-sorting {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.btn-sorting {
+    border-width: 0;
+    border-bottom: 1px dotted #81b3d2;
+
+    font-size: 12px;
+    line-height: 1.5;
+    color: #cacaca;
+    text-transform: uppercase;
+
+    background-color: #fefefe;
+}
+
+.btn-arrow {
+    border: none;
+
+    font-size: 0;
+
+    background-color: #cacaca;
+}
+
+.btn-sorting-active {
+    border: none;
+
+    color: #81b3d2;
+}
+
+.btn-arrow-active {
+    font-size: 0;
+
+    background-color: #81b3d2;
+}
+
+.btn-sorting:hover {
+    color: #81b3d2;
+}
+
+.btn-sorting:active {
+    border: none;
+
+    color: #000000;
+}
+
+.btn-arrow:hover {
+    background-color: #81b3d2;
+}
+
+.btn-arrow:active {
+    background-color: #000000;
 }
 
 .house-list {

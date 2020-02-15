@@ -24,36 +24,40 @@
 
   <main class="page-main-catalog">
     <h1 class="visually-hidden">Каталог гостиниц</h1>
-    <form action="" method="post">
-      <fieldset class="infrastructure">
-        <legend>Инфраструктура:</legend>
+    <form class="form-catalog" action="" method="post">
+      <fieldset class="fieldset-catalog infrastructure">
+        <legend class="legend-catalog">Инфраструктура:</legend>
         <label><input type="checkbox" name="pool" checked>Бассейн</label>
         <label><input type="checkbox" name="parking">Парковка</label>
         <label><input type="checkbox" name="wi-fi">wi-fi</label>
       </fieldset>
-      <fieldset class="type-housing">
-        <legend>Тип жилья:</legend>
+      <fieldset class="fieldset-catalog type-housing">
+        <legend class="legend-catalog">Тип жилья:</legend>
         <label><input type="checkbox" name="hotel" checked>Гостиница</label>
         <label><input type="checkbox" name="motel" checked>Мотель</label>
         <label><input type="checkbox" name="apartments" checked>Апартаменты</label>
       </fieldset>
-      <div class="cost">
-        <label for="cost-fielf">Стоимость в сутки (р):</label>
+      <fieldset class="fieldset-catalog cost">
+        <legend class="legend-catalog">Стоимость в сутки (р):</legend>
         <output name="min-cost">от 0</output>
         <output name="max-cost">до 3000</output>
-        <input id="cost-fielf" type="range" name="cost" min="0">
+        <input type="range" name="cost" min="0">
         <button type="submit">Показать</button>
-      </div>
+      </fieldset>
     </form>
     <div class="sorting">
-      <b>Найдено: 3</b>
-      <fieldset class="sorting-field">
-        <legend>Сортировка:</legend>
-        <button type="button">По цене</button>
-        <button type="button">По типу</button>
-        <button type="button">По рейтингу</button>
-        <button class="arrow" type="button"></button>
-        <button class="arrow" type="button"></button>
+      <b class="found">Найдено: 3</b>
+      <fieldset class="fieldset-sorting" class="sorting-field">
+        <legend class="legend-sorting">Сортировка:</legend>
+        <button class="btn-sorting btn-sorting-active" type="button">По цене</button>
+        <button class="btn-sorting" type="button">По типу</button>
+        <button class="btn-sorting" type="button">По рейтингу</button>
+        <button class="btn-arrow btn-arrow-up" class="arrow" type="button">
+          Кнопка вверх
+        </button>
+        <button class="btn-arrow btn-arrow-down btn-arrow-active" class="arrow" type="button">
+          Кнопка вниз
+        </button>
       </fieldset>
     </div>
     <ul class="house-list">
