@@ -11,9 +11,23 @@ body {
     background-color: #f2f2f2;
 }
 
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     color: #000000;
+}
+
+.button {
+    border: 0 none;
+
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .visually-hidden {
@@ -48,139 +62,153 @@ a {
     color: #cacaca;
 }
 
-.active-link {
+.site-navigation-link-active {
     color: #766357;
 }
 
 /* Начало стилизации главной страницы  */
 
-.page-main-index {
+.page-main {
     background-color: #ffffff;
 }
 
-.title-index {
+.title {
     font-size: 21px;
     line-height: 1.5;
     font-weight: bold;
     color: #000000;
 }
 
-.subtitle-advantages {
+.advantages-title {
     font-size: 14px;
     line-height: 1.5;
     font-weight: normal;
     color: #333333;
 }
 
-.list-advantages,
-.sublist-advantages {
+.advantages-list,
+.advantages-sublist {
     list-style: none;
 }
 
-.item-advantages,
-.subitem-advantages {
-    font-size: 14px;
-    line-height: 1.5;
+.advantages-item,
+.advantages-subitem {
     color: #333333;
 }
 
-.item-advantages {
+.advantages-item {
     background-color: #eeeeee;
 }
 
-.first-item-advantages,
-.second-item-advantages {
+.advantages-item:first-of-type,
+.advantages-item:nth-of-type(2) {
     color: #ffffff;
 
     background-color: #81b3d2;
 }
 
-.subitem-advantages {
+.advantages-subitem {
     background-color: #ffffff;
 }
 
-.subtitle-item-advantages {
+.advantages-item-title {
     font-size: 21px;
     line-height: 1.5;
     font-weight: bold;
 }
 
-.subtitle-form-index {
+.search-form-title {
     font-size: 30px;
     line-height: 1.5;
     font-weight: bold;
     color: #000000;
 }
 
-.form-index p {
+.search-form-text {
     color: #333333;
 }
 
-.button-search {
-    font-size: 21px;
-    line-height: 1.5;
-    font-size: bold;
-    color: #ffffff;
-
+.search-form-button {
     background-color: #766357;
 }
 
-.button-search:hover {
+.search-form-button:hover {
     background-color: #604e43;
 }
 
-.button-search:active {
+.search-form-button:active {
     color: #928a85;
 
     background-color: #503e33;
 }
 
-/* Начало стилизации страницы с катологом гостиниц  */
-
-.page-main-catalog {
-    background-color: #ffffff;
+.search-form-find {
+    background-color: #81b3d2;
 }
 
-.form-catalog {
-    font-size: 14px;
-    line-height: 1.5;
+.search-form-find:hover {
+    background-color: #669ec0;
+}
+
+.search-form-find:active {
+    color: #94b9d2;
+
+    background-color: #5496bd;
+}
+
+/* Начало стилизации страницы с катологом гостиниц  */
+
+.choice-form {
     color: #ffffff;
 
     background-color: #3f769f;
 }
 
-.fieldset-catalog {
+.choice-form-fieldset {
     border: 0 none;
 }
 
-.legend-catalog {
+.choice-form-legend {
     font-size: 16px;
     line-height: 1.5;
     font-weight: bold;
+}
+
+.show-button {
+    border: 2px solid #ffffff;
+
+    font-weight: 400;
+
+    background-color: rgba(63, 118, 159, 0);
+}
+
+.show-button:hover {
+    color: #000000;
+
+    background-color: #ffffff;
 }
 
 .sorting {
     background-color: #fefefe;
 }
 
-.found {
+.sorting-found {
     font-size: 21px;
     line-height: 1.5;
     font-weight: bold;
-    color: #000000;
 }
 
-.fieldset-sorting {
+.sorting-field {
     border: 0 none;
 }
 
-.legend-sorting {
+.sorting-legend {
     font-size: 12px;
     line-height: 1.5;
     color: #000000;
 }
 
-.btn-sorting {
+.button-sorting {
     border-width: 0;
     border-bottom: 1px dotted #81b3d2;
 
@@ -192,7 +220,23 @@ a {
     background-color: #fefefe;
 }
 
-.btn-arrow {
+.button-sorting:hover {
+    color: #81b3d2;
+}
+
+.button-sorting:active {
+    border: none;
+
+    color: #000000;
+}
+
+.button-sorting-active {
+    border: none;
+
+    color: #81b3d2;
+}
+
+.button-arrow {
     border: none;
 
     font-size: 0;
@@ -200,34 +244,18 @@ a {
     background-color: #cacaca;
 }
 
-.btn-sorting-active {
-    border: none;
-
-    color: #81b3d2;
+.button-arrow:hover {
+    background-color: #81b3d2;
 }
 
-.btn-arrow-active {
+.button-arrow:active {
+    background-color: #000000;
+}
+
+.button-arrow-active {
     font-size: 0;
 
     background-color: #81b3d2;
-}
-
-.btn-sorting:hover {
-    color: #81b3d2;
-}
-
-.btn-sorting:active {
-    border: none;
-
-    color: #000000;
-}
-
-.btn-arrow:hover {
-    background-color: #81b3d2;
-}
-
-.btn-arrow:active {
-    background-color: #000000;
 }
 
 .house-list {
@@ -237,75 +265,66 @@ a {
     list-style: none;
 }
 
-.house-item {
+.house-list-item {
     border-top: 1px solid #e5e5e5;
 }
 
-.house-item:last-of-type {
+.house-list-item:last-of-type {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.house-name {
+.house-list-name {
     font-size: 21px;
     line-height: 1.5;
     font-weight: bold;
     color: #000000;
 }
 
-.house-name:hover {
+.house-list-name:hover {
     color: #81b3d2;
 }
 
-.house-name:active {
+.house-list-name:active {
     color: #cacaca;
 }
 
-.house-type {
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: normal;
+.house-list-type {
     color: #333333;
 }
 
-.house-detailed,
-.house-reservation {
+.house-list-detailed {
     font-size: 14px;
-    line-height: 1.5;
-    font-weight: bold;
-    color: #ffffff;  
-}
 
-.house-detailed {
     background-color: #81b3d2;
 }
 
-.house-detailed:hover {
+.house-list-detailed:hover {
     background-color: #669ec0;
 }
 
-.house-detailed:active {
+.house-list-detailed:active {
     color: #8b979f;
 
     background-color: #425c6c;
 }
 
-.house-reservation {
+.house-list-reservation {
+    font-size: 14px;
+
     background-color: #766357;
 }
 
-.house-reservation:hover {
+.house-list-reservation:hover {
     background-color: #604e43;
 }
 
-.house-reservation:active {
+.house-list-reservation:active {
     color: #928a85;
 
     background-color: #503e33;
 }
 
-.house-rating {
-    font-size: 14px;
-    line-height: 1.5;
+.house-list-rating {
     color: #666666;
 
     background-color: #f2f2f2;
