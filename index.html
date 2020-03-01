@@ -10,15 +10,23 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <a href="#">
+      <a class="logo-sedona" href="#">
         <img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип">
       </a>
       <nav>
         <ul class="site-navigation">
-          <li><a class="site-navigation-link" href="#">Информация</a></li>
-          <li><a class="site-navigation-link" href="#">Фото и видео</a></li>
-          <li><a class="site-navigation-link" href="#">Карта штата</a></li>
-          <li><a class="site-navigation-link" href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Информация</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Фото и видео</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Карта штата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -71,12 +79,12 @@
         </ul>
       </section>
 
-      <section class="search-form">
-        <h2 class="search-form-title">Заинтересовались?</h2>
-        <p class="search-form-text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      <section class="search">
+        <h2 class="search-title">Заинтересовались?</h2>
+        <p class="search-text">
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <form action="" method="post">
+        <form class="search-form" action="" method="post">
           <button class="button search-form-button" type="button">Поиск гостиницы в седоне</button>
           <label>
             Дата заезда:
@@ -111,20 +119,20 @@
     </main>
     
     <footer class="page-footer">
-      <ul class="contacts">
-        <li>#visitsedona</li>
-        <li>Тел: +7(495)666-02-66</li>
+      <ul class="page-footer-part contacts">
+        <li class="contacts-item">#visitsedona</li>
+        <li class="contacts-item">Тел: +7(495)666-02-66</li>
       </ul>
-      <ul class="socials">
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+      <ul class="page-footer-part socials">
+        <li class="socials-item"><a href="#">Вконтакте</a></li>
+        <li class="socials-item"><a href="#">Фейсбук</a></li>
+        <li class="socials-item"><a href="#">Инстаграм</a></li>
       </ul>
-      <div>
-        website by
-        <a href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTML Academy">
-        </a>
+      <div class="page-footer-part logo-htmlacademy">
+          <span class="logo-htmlacademy-item">website by</span>
+          <a class="logo-htmlacademy-item" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTML Academy">
+          </a>
       </div>
     </footer>
   </div>
