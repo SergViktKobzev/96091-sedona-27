@@ -45,22 +45,27 @@ a {
 /* Начало стилизации шапки сайта  */
 
 .page-header {
-    position: relative;
     font-weight: bold;
 
     background-color: #ffffff;
 }
 
+.wrap-navigation {
+    display: flex;
+    flex-grow: 1;
+}
+
 .logo-sedona {
-    position: absolute;
-    top: 0;
-    left: 530px;
-    margin: 0;
-    padding: 0;
+    min-width: 240px;
+    margin-bottom: -21px;
+
+    text-align: center;
 }
 
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
+    min-width: 480px;
     margin: 0;
     padding: 0;
 
@@ -68,19 +73,15 @@ a {
 }
 
 .site-navigation-item {
-    align-items: center;
-    width: 20%;
-    min-height: 55px;
+    flex-grow: 1;
+    min-width: 240px;
     margin: 0;
     padding: 0;
 }
 
-.site-navigation-item:nth-child(2) {
-    margin-right: 240px;
-}
-
 .site-navigation-link {
     display: block;
+    min-height: 55px;
     line-height: 55px;
     text-align: center;
 }
@@ -100,6 +101,8 @@ a {
 /* Начало стилизации главной страницы  */
 
 .page-main {
+    margin-top: -21px;
+    padding-top: 21px;
     background-color: #ffffff;
 }
 
