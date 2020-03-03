@@ -11,7 +11,7 @@ body {
     background-color: #f2f2f2;
 }
 
-.wrapper {
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -101,54 +101,113 @@ a {
 /* Начало стилизации главной страницы  */
 
 .page-main {
-    margin-top: -21px;
     padding-top: 21px;
     background-color: #ffffff;
 }
 
 .title {
+    width: 440px;
+    margin: 0 auto;
+
     font-size: 21px;
     line-height: 1.5;
     font-weight: bold;
     color: #000000;
+
+    outline: 1px solid black;
 }
 
 .advantages-title {
+    width: 490px;
+    margin: 0 auto;
+
     font-size: 14px;
     line-height: 1.5;
     font-weight: normal;
     color: #333333;
+
+    outline: 1px solid black;
 }
 
 .advantages-list,
 .advantages-sublist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+    outline: 1px solid black;
 }
 
 .advantages-item,
 .advantages-subitem {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+
     color: #333333;
+    outline: 1px solid black;
 }
 
 .advantages-item {
+
+    min-height: 256px;
     background-color: #eeeeee;
 }
 
 .advantages-item:first-of-type,
 .advantages-item:nth-of-type(2) {
+    flex-direction: row;
+    width: 1200px;
     color: #ffffff;
 
     background-color: #81b3d2;
 }
 
+.advantages-item:first-of-type::before {
+    content: "content";
+    width: 800px;
+}
+
+.advantages-item:nth-of-type(2)::before {
+    content: "content";
+    width: 800px;
+}
+
+.advantages-item-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    min-height: 256px;
+    outline: 1px solid black;
+}
+
+.real-town {
+    order: -1;
+}
+
 .advantages-subitem {
+    min-height: 330px;
     background-color: #ffffff;
 }
 
 .advantages-item-title {
+    width: 160px;
+    text-align: center;
     font-size: 21px;
     line-height: 1.5;
     font-weight: bold;
+}
+
+.advantages-item-text {
+    width: 310px;
+    text-align: center;
 }
 
 .search {
@@ -174,12 +233,17 @@ a {
 .search-form {
     display: flex;
     flex-direction: column;
-    width: 568px;
+    align-items: center;
+    min-width: 568px;
     margin-left: auto;
     margin-right: auto;
+
+    outline: 1px solid black;
 }
 
 .search-form-button {
+    align-self: stretch;
+
     background-color: #766357;
 }
 
@@ -210,13 +274,27 @@ a {
 /* Начало стилизации страницы с катологом гостиниц  */
 
 .choice-form {
+    display: flex;
+    flex-wrap: wrap;
+
     color: #ffffff;
 
     background-color: #3f769f;
+    
+    outline: 1px solid black;
 }
 
 .choice-form-fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     border: 0 none;
+    
+    outline: 1px solid black;
+}
+
+.type-housing {
+    margin-right: auto;
 }
 
 .choice-form-legend {
@@ -240,7 +318,12 @@ a {
 }
 
 .sorting {
+    display: flex;
+    align-items: center;
+    min-height: 85px;
     background-color: #fefefe;
+
+    outline: 1px solid black;
 }
 
 .sorting-found {
@@ -249,11 +332,7 @@ a {
     font-weight: bold;
 }
 
-.sorting-field {
-    border: 0 none;
-}
-
-.sorting-legend {
+.sorting-by {
     font-size: 12px;
     line-height: 1.5;
     color: #000000;
@@ -287,6 +366,10 @@ a {
     color: #81b3d2;
 }
 
+.button-sorting-rating {
+    margin-right: auto;
+}
+
 .button-arrow {
     border: none;
 
@@ -310,6 +393,8 @@ a {
 }
 
 .house-list {
+    margin: 0;
+    padding: 0;
 
     background-color: #ffffff;
 
@@ -439,7 +524,3 @@ a {
 .logo-htmlacademy {
     align-items: center;
 }
-
-
-
-
